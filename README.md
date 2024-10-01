@@ -8,7 +8,7 @@ Because this course is _so big_ we're using `pnpm` as the package manager. It's 
 
 [Install `pnpm` globally](https://pnpm.io/installation).
 
-### Install Dependencies testing
+### Install Dependencies
 
 ```sh
 # Installs all dependencies
