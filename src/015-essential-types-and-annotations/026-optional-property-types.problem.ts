@@ -3,7 +3,7 @@ import { expect, it } from "vitest";
 
 // CODE
 
-const concatName = (user: { first: string; last: string }) => {
+const concatName = (user: { first: string; last?: string }) => {
   if (!user.last) {
     return user.first;
   }
@@ -14,8 +14,8 @@ const concatName = (user: { first: string; last: string }) => {
 
 it("should return the full name", () => {
   const result = concatName({
-    first: "John",
-    last: "Doe",
+   first: "John",
+   last: "Doe"
   });
 
   type test = Expect<Equal<typeof result, string>>;
